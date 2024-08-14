@@ -32,5 +32,9 @@
 			<_Parameter1>TJC.MVVM.Tests</_Parameter1>
 		</AssemblyAttribute>
 	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="TJC.Singleton" Version="0.1.4" />
+	</ItemGroup>
 	
 </Project>
