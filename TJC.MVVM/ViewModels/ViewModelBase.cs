@@ -1,4 +1,5 @@
-﻿using TJC.MVVM.Extensions;
+﻿using ReactiveUI;
+using TJC.MVVM.Extensions;
 using TJC.MVVM.Models;
 
 namespace TJC.MVVM.ViewModels;
@@ -29,7 +30,7 @@ public abstract class ViewModelBase<T>
     protected abstract void DoRefresh(T model);
 }
 
-public abstract class ViewModelBase
+public abstract class ViewModelBase : ReactiveObject
 {
     private DateTime _lastRefresh;
 
