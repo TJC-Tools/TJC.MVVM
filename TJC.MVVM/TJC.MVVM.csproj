@@ -34,7 +34,7 @@
   <!-- DEPENDENCIES -->
   <ItemGroup>
     <PackageReference Include="ReactiveUI" Version="20.1.63" />
-    <PackageReference Include="TJC.Singleton" Version="0.1.4" />
+    <PackageReference Include="TJC.Singleton" Version="0.1.9" />
   </ItemGroup>
   <!-- TESTS -->
   <ItemGroup>
