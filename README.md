@@ -2,7 +2,7 @@
 
 [![NuGet Downloads](https://img.shields.io/nuget/dt/TJC.MVVM)](https://www.nuget.org/packages/TJC.MVVM) ![Size](https://img.shields.io/github/repo-size/TJC-Tools/TJC.MVVM) [![License](https://img.shields.io/github/license/TJC-Tools/TJC.MVVM.svg)](LICENSE)
 
-[![codecov](https://codecov.io/gh/TJC-Tools/TJC.Test/graph/badge.svg?token=92707C5KH4)](https://codecov.io/gh/TJC-Tools/TJC.MVVM)
+[![codecov](https://codecov.io/gh/TJC-Tools/TJC.MVVM/graph/badge.svg?token=XPHNQC60VZ)](https://codecov.io/gh/TJC-Tools/TJC.MVVM)
 
 ## [ModelBase](TJC.MVVM/Models/ModelBase.cs)
 - Base for Models
