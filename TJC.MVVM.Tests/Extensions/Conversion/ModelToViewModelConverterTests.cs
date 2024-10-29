@@ -10,7 +10,10 @@ public class ModelToViewModelConverterTests
     public void RefreshingModelRefreshesViewModel()
     {
         var model = new ModelMock();
-        var viewModels = ModelToViewModelConverter.CreateViewModelsFromModels<ViewModelMock, ModelMock>([model]);
+        var viewModels = ModelToViewModelConverter.CreateViewModelsFromModels<
+            ViewModelMock,
+            ModelMock
+        >([model]);
         Assert.AreEqual(1, viewModels.Count);
     }
 }

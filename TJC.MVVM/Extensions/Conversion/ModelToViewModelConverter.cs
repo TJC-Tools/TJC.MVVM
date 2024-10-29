@@ -13,7 +13,9 @@ public static class ModelToViewModelConverter
     /// <typeparam name="TModel">Model Type</typeparam>
     /// <param name="models">Models</param>
     /// <returns>View Models</returns>
-    public static ObservableCollection<TViewModel> CreateViewModelsFromModels<TViewModel, TModel>(IEnumerable<TModel> models)
+    public static ObservableCollection<TViewModel> CreateViewModelsFromModels<TViewModel, TModel>(
+        IEnumerable<TModel> models
+    )
         where TViewModel : ViewModelBase<TModel>
         where TModel : ModelBase
     {

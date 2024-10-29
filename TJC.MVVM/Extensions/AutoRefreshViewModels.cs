@@ -6,8 +6,7 @@ public sealed class AutoRefreshViewModels : SingletonBase<AutoRefreshViewModels>
 {
     public TimeSpan AutoRefreshTime = TimeSpan.FromMinutes(1);
 
-    private AutoRefreshViewModels() =>
-        AutoRefresh();
+    private AutoRefreshViewModels() => AutoRefresh();
 
     /// <summary>
     /// Auto Refreshes All View Models
@@ -29,8 +28,7 @@ public sealed class AutoRefreshViewModels : SingletonBase<AutoRefreshViewModels>
         await task;
     }
 
-    private void OnAutoRefreshEvent() =>
-        AutoRefreshEvent?.Invoke(null, EventArgs.Empty);
+    private void OnAutoRefreshEvent() => AutoRefreshEvent?.Invoke(null, EventArgs.Empty);
 
     public event EventHandler? AutoRefreshEvent;
 

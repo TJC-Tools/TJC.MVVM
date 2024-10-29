@@ -2,8 +2,7 @@
 
 namespace TJC.MVVM.Tests.Mocks;
 
-internal class ViewModelMock(ModelMock model)
-        : ViewModelBase<ModelMock>(model)
+internal class ViewModelMock(ModelMock model) : ViewModelBase<ModelMock>(model)
 {
     public int RefreshCount = 0;
 

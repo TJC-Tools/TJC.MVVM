@@ -4,15 +4,17 @@ using TJC.MVVM.Models;
 
 namespace TJC.MVVM.ViewModels;
 
-public abstract class ViewModelBase<T>
-    : ViewModelBase
+public abstract class ViewModelBase<T> : ViewModelBase
     where T : ModelBase
 {
     protected ViewModelBase(T model)
     {
         Model = model;
         Refresh();
-        Model.RefreshEvent += delegate { DoRefresh(); };
+        Model.RefreshEvent += delegate
+        {
+            DoRefresh();
+        };
     }
 
     public T Model { get; }
@@ -37,7 +39,10 @@ public abstract class ViewModelBase : ReactiveObject
     protected ViewModelBase()
     {
         Refresh();
-        AutoRefreshViewModels.Instance.AutoRefreshEvent += delegate { AutoRefresh(); };
+        AutoRefreshViewModels.Instance.AutoRefreshEvent += delegate
+        {
+            AutoRefresh();
+        };
     }
 
     private void AutoRefresh()
