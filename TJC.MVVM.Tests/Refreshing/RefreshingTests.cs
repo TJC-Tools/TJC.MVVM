@@ -12,6 +12,10 @@ public class ModelToViewModelConverterTests
         var viewModel = new ViewModelMock(model);
         Assert.AreEqual(1, viewModel.RefreshCount, "One Refresh Occurs on Creation");
         model.RunRefresh();
-        Assert.AreEqual(2, viewModel.RefreshCount, "Another Refresh Occurs when the Model Refreshes");
+        Assert.AreEqual(
+            2,
+            viewModel.RefreshCount,
+            "Another Refresh Occurs when the Model Refreshes"
+        );
     }
 }

@@ -4,6 +4,5 @@ namespace TJC.MVVM.Tests.Mocks;
 
 internal class ModelMock : ModelBase
 {
-    public void RunRefresh() =>
-        OnRefresh();
+    public void RunRefresh() => OnRefresh();
 }
