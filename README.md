@@ -7,18 +7,3 @@
 [![License](https://img.shields.io/github/license/TJC-Tools/TJC.MVVM.svg)](LICENSE)
 
 [![codecov](https://codecov.io/gh/TJC-Tools/TJC.MVVM/graph/badge.svg?token=XPHNQC60VZ)](https://codecov.io/gh/TJC-Tools/TJC.MVVM)
-
-## [ModelBase](TJC.MVVM/Models/ModelBase.cs)
-- Base for Models
-
-## [ViewModelBase](TJC.MVVM/ViewModels/ViewModelBase.cs)
-- Base for ViewModels
-
-## [ViewModelCollectionBase](TJC.MVVM/ViewModels/ViewModelCollectionBase.cs)
-- Base for Collections of ViewModels
-
-## [ModelToViewModelConverter](TJC.MVVM/Extensions/Conversion/ModelToViewModelConverter.cs)
-- Converts Models to ViewModels
-
-## [AutoRefreshViewModels](TJC.MVVM/Extensions/AutoRefreshViewModels.cs)
-- Used to Auto-Refresh the ViewModels
