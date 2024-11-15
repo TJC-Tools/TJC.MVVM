@@ -7,3 +7,6 @@
 [![License](https://img.shields.io/github/license/TJC-Tools/TJC.MVVM.svg)](LICENSE)
 
 [![codecov](https://codecov.io/gh/TJC-Tools/TJC.MVVM/graph/badge.svg?token=XPHNQC60VZ)](https://codecov.io/gh/TJC-Tools/TJC.MVVM)
+
+## Documentation
+- [Changelog](CHANGELOG.md)
