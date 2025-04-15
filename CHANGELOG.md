@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.7] - 2025-04-15
+
 ## [0.4.6] - 2025-01-03
 
 ## [0.4.5] - 2024-12-03
@@ -57,7 +59,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Create model & view mode bases classes
 
-[Unreleased]: https://github.com/TJC-Tools/TJC.MVVM/compare/v0.4.6...HEAD
+[Unreleased]: https://github.com/TJC-Tools/TJC.MVVM/compare/v0.4.7...HEAD
+
+[0.4.7]: https://github.com/TJC-Tools/TJC.MVVM/compare/v0.4.6...v0.4.7
 
 [0.4.6]: https://github.com/TJC-Tools/TJC.MVVM/compare/v0.4.5...v0.4.6
 
