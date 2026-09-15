@@ -7,7 +7,8 @@ public sealed class AutoRefreshViewModels : SingletonBase<AutoRefreshViewModels>
     public TimeSpan AutoRefreshTime = TimeSpan.FromMinutes(1);
     private readonly Timer _timer;
 
-    private AutoRefreshViewModels() => _timer = new(AutoRefresh, null, TimeSpan.Zero, Timeout.InfiniteTimeSpan);
+    private AutoRefreshViewModels() =>
+        _timer = new(AutoRefresh, null, TimeSpan.Zero, Timeout.InfiniteTimeSpan);
 
     /// <summary>
     /// Auto Refreshes All View Models

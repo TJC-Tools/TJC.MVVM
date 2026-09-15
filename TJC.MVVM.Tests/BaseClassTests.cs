@@ -4,7 +4,6 @@ using TJC.MVVM.ViewModels;
 
 namespace TJC.MVVM.Tests;
 
-
 public class BaseClassTests
 {
     [Fact]
