@@ -3,7 +3,6 @@ using TJC.MVVM.Tests.Mocks;
 
 namespace TJC.MVVM.Tests.Extensions.Conversion;
 
-
 public class ModelToViewModelConverterTests
 {
     [Fact]
@@ -14,6 +13,6 @@ public class ModelToViewModelConverterTests
             ViewModelMock,
             ModelMock
         >([model]);
-        Assert.Equal(1, viewModels.Count);
+        Assert.Single(viewModels);
     }
 }
