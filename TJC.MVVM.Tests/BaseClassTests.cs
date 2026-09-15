@@ -4,19 +4,19 @@ using TJC.MVVM.ViewModels;
 
 namespace TJC.MVVM.Tests;
 
-[TestClass]
+
 public class BaseClassTests
 {
-    [TestMethod]
+    [Fact]
     public void ViewModelCollectionBase_StoresProvidedItems()
     {
         var items = new ObservableCollection<ViewModelMock>();
         var viewModel = new CollectionViewModelMock(items);
 
-        Assert.AreSame(items, viewModel.Items);
+        Assert.Same(items, viewModel.Items);
     }
 
-    [TestMethod]
+    [Fact]
     public void Refresh_UpdatesLastRefreshAndInvokesViewModelRefresh()
     {
         var model = new ModelMock();
@@ -24,7 +24,7 @@ public class BaseClassTests
 
         viewModel.Refresh();
 
-        Assert.AreEqual(2, viewModel.RefreshCount);
+        Assert.Equal(2, viewModel.RefreshCount);
     }
 
     private sealed class CollectionViewModelMock(ObservableCollection<ViewModelMock> items)

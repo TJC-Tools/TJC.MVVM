@@ -6,6 +6,7 @@
 ![Size](https://img.shields.io/github/repo-size/TJC-Tools/TJC.MVVM)
 [![License](https://img.shields.io/github/license/TJC-Tools/TJC.MVVM.svg)](LICENSE)
 
+[![tests](https://github.com/TJC-Tools/TJC.MVVM/actions/workflows/ct-matrix.yml/badge.svg)](https://github.com/TJC-Tools/TJC.MVVM/actions/workflows/ct-matrix.yml)
 [![codecov](https://codecov.io/gh/TJC-Tools/TJC.MVVM/graph/badge.svg?token=XPHNQC60VZ)](https://codecov.io/gh/TJC-Tools/TJC.MVVM)
 
 ## Documentation

@@ -1,31 +1,25 @@
-﻿using TJC.Singleton;
+using TJC.Singleton;
 
 namespace TJC.MVVM.Extensions;
 
 public sealed class AutoRefreshViewModels : SingletonBase<AutoRefreshViewModels>
 {
     public TimeSpan AutoRefreshTime = TimeSpan.FromMinutes(1);
+    private readonly Timer _timer;
 
-    private AutoRefreshViewModels() => AutoRefresh();
+    private AutoRefreshViewModels() => _timer = new(AutoRefresh, null, TimeSpan.Zero, Timeout.InfiniteTimeSpan);
 
     /// <summary>
     /// Auto Refreshes All View Models
     /// </summary>
-    private async void AutoRefresh()
+    private void AutoRefresh(object? state)
     {
-        var task = Task.Run(() =>
-        {
-            while (true)
-            {
-                // Refresh UI Elements
-                var startTime = DateTime.Now;
-                OnAutoRefreshEvent();
-                var elapsedTime = startTime - DateTime.Now;
+        // Refresh UI Elements
+        var startTime = DateTime.Now;
+        OnAutoRefreshEvent();
+        var elapsedTime = DateTime.Now - startTime;
 
-                Thread.Sleep(GetTimeUntilNextRefresh(elapsedTime));
-            }
-        });
-        await task;
+        _timer.Change(GetTimeUntilNextRefresh(elapsedTime), Timeout.InfiniteTimeSpan);
     }
 
     private void OnAutoRefreshEvent() => AutoRefreshEvent?.Invoke(null, EventArgs.Empty);

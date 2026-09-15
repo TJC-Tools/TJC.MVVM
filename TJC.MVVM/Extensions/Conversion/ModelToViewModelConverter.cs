@@ -1,4 +1,4 @@
-﻿using System.Collections.ObjectModel;
+using System.Collections.ObjectModel;
 using TJC.MVVM.Models;
 using TJC.MVVM.ViewModels;
 

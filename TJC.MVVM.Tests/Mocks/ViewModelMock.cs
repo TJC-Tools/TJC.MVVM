@@ -1,4 +1,4 @@
-﻿using TJC.MVVM.ViewModels;
+using TJC.MVVM.ViewModels;
 
 namespace TJC.MVVM.Tests.Mocks;
 

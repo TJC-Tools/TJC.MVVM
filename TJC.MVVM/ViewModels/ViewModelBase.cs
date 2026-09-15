@@ -1,4 +1,4 @@
-﻿using ReactiveUI;
+using ReactiveUI;
 using TJC.MVVM.Extensions;
 using TJC.MVVM.Models;
 

@@ -1,4 +1,4 @@
-﻿using TJC.MVVM.Models;
+using TJC.MVVM.Models;
 
 namespace TJC.MVVM.Tests.Mocks;
 

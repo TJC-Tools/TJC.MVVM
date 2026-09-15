@@ -1,4 +1,4 @@
-﻿namespace TJC.MVVM.Models;
+namespace TJC.MVVM.Models;
 
 public abstract class ModelBase
 {
